@@ -1,9 +1,0 @@
-{
-  "python.defaultInterpreterPath": "C:\\Python314\\python.exe",
-  "notebook.kernelProviderAssociations": [
-    {
-      "viewType": "jupyter-notebook",
-      "kernelProvider": "ms-toolsai.jupyter"
-    }
-  ]
-}
