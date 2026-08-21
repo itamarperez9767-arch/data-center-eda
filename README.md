@@ -1,19 +1,39 @@
-# Data Center EDA Assignment
+# Data Center EX2 — Regression and Classification Error Analysis
 
-This repository contains my Exploratory Data Analysis assignment.
+This repository contains Homework Assignment EX2: Regression and Classification Error Analysis.
 
 ## Main notebook
 
 Please open:
 
-`data_center_eda_clean_review.ipynb`
+`data_center_error_analysis_ex2.ipynb`
 
-## Topic
+## Dataset
 
-Exploratory Data Analysis of Energy Consumption in a Data Center.
+The notebook uses the same data-center energy consumption dataset from EX1.
 
-## Notes
+The analysis includes:
 
-The analysis uses a cleaned working subset of 1,500 valid chronological records from data center power and weather sensor data.
+- Regression target: `cooling_kw`
+- Classification target: `high_cooling_load`
+- k-fold cross-validation with `k=5`
+- Regression residual analysis
+- Extreme error analysis
+- Regression model comparison
+- Classification confusion matrix analysis
+- Probability-based error analysis
+- Threshold sensitivity analysis
+- ROC-AUC and ROC curve
+- Final reflection
 
-Large raw CSV files are not included in the repository because they are excluded by `.gitignore`.
+## Reproducibility note
+
+The notebook can load a compact processed file named:
+
+`data_center_working_sample.csv`
+
+If this file does not exist, the notebook tries to recreate the working sample from the original raw CSV files under:
+
+`data/raw/`
+
+Large raw CSV files should not be uploaded to GitHub. If the instructor needs to rerun the notebook without the raw files, include a compact working sample CSV.

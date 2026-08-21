@@ -1,6 +1,28 @@
-﻿data/raw/*.csv
+# Raw and large data files
+*.zip
+data/raw/*.csv
 data/raw/*.zip
 data/processed/*.csv
-*.csv
-*.zip
 esif.influx*/
+
+# Ignore CSV files by default, but allow compact reproducible samples
+*.csv
+!data_center_working_sample.csv
+!data_center_working_sample_ex2.csv
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+
+# Old EX1 or practice files that should not be part of EX2 submission
+archive/
+deta/
+test.py
+using-python.ipynb
+using-r.ipynb
+data_center_eda.ipynb
+r_cells.txt
